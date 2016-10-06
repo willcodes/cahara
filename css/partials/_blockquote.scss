@@ -1,0 +1,8 @@
+.blockquote__about--white,.blockquote__quote--white{
+	@include textStyle($georgia,2.2rem,500);
+	font-style:italic;
+	color:$black;
+}
+.blockquote__quote--white{
+	color:white;
+}

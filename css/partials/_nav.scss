@@ -1,0 +1,136 @@
+nav.hamburger{
+	padding:2.5% 2.5%;
+	margin:0 auto;
+	margin-top:0;
+	background: transparent;
+	color:white;
+	align-items:center;
+	transition:0.3s all ease;
+	width:100%;
+	position:relative;
+	z-index:99;
+	.logo,.hamburger-menu{
+		margin:0;
+	}
+	.hamburger-menu i{
+		font-size:1.5rem;
+	}
+	.wrapper{
+		display:flex;
+		justify-content:space-between;
+		align-items:center;
+	}
+}
+
+nav.top-nav{
+	background: $darkblue;
+	.nav-wrapper{
+		display:flex;
+		justify-content:space-between;
+		align-items:center;
+		padding:15px 0;
+	}
+	ul{
+		display:flex;
+		align-items:center;
+		color:white;
+		list-style:none;
+		margin:0;
+	}
+	li a{
+		@include textStyle('lato',1rem,400);
+		color:rgba(255,255,255,0.7);
+		text-decoration:none;
+		display:block;
+		padding:0 5%;
+		text-transform:uppercase;
+		margin:0 12px;
+		transition:0.3s all ease;
+		&:hover{
+			color:white;
+		}
+	}
+}
+.top-nav-scrolled{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index:100;
+}
+
+.small-menu__scrolled{
+	width:100%;
+	padding:0 5%;
+	background:$darkblue;
+}
+
+nav.nav__menu{
+	width:30%;
+	height:100%;
+	display:none;
+	position:fixed;
+	right:0;
+	top:0;
+	z-index:100;
+	background: rgba($darkblue,0.7);
+	ul{
+		padding:0;
+		margin:5% auto;
+		text-align:left;
+		list-style:none;
+		width:40%;
+	}
+	.nav__wrapper{
+		margin:25% auto;
+	}
+
+	li a{
+		display:flex;
+		text-align:left;
+		padding:15px 0;
+		color:$notwhite;
+		list-style:none;
+		text-transform:uppercase;
+		text-decoration:none;
+		letter-spacing:1px;
+		position:relative;
+		line-height:12px;
+		width:100%;
+		border-bottom:2px solid transparent;
+		transition:0.3s all ease;
+		&:hover{
+			border-bottom:2px solid $red;
+			color:white;
+		}
+		&:hover i{
+			color:white;
+		}
+		i{
+			color:transparent;
+			font-size:0.8rem;
+			margin-left:auto;
+			transition:0.3s all ease;
+			
+		}
+		}
+		a.close {
+		    position: absolute;
+		    top: 25px;
+		    right: 25px;
+		    color:white;
+		    text-decoration:none;
+		    font-size:1.5rem;
+		}
+	img{
+		display:block;
+		border-radius:50%;
+		margin:0 auto;
+		margin-bottom:10%;
+		width:125px;
+		height:125px;
+	}
+}
+
+.hamburger-menu{
+	cursor:pointer;
+}
