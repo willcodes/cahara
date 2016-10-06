@@ -188,6 +188,10 @@ $largeScreen: 1400px;
 	}
 	.blog__container{
 		padding:10px;
+		.blog__container--top,.blog__container--middle,.blog__container--bottom{
+			margin:0 auto;
+			max-width:250px;
+		}
 	}
 	.getquote .flex-wrapper{
 		flex-wrap:wrap;
@@ -225,6 +229,9 @@ $largeScreen: 1400px;
 	}
 	form input[type="submit"]{
 		background:$red;
+		&:hover{
+			background:darken($red,20);
+		}
 	}
 	nav.nav__menu{
 		width:100%;
@@ -242,5 +249,26 @@ $largeScreen: 1400px;
 	.button--work{
 		flex:1 1 auto;
 		margin:2% auto;
+	}
+	.modal-content{
+		margin-top:25%;
+		padding: 25px;
+		width: 100%;
+	}
+}
+@media screen and ( max-height: 417px ){
+	nav.nav__menu{
+		width:50%;
+		height:100%;
+		background:rgba($darkblue,0.9);
+		ul{
+			width:20%;;
+		}
+		img{
+			display:none;
+		}
+		a.close{
+			font-size:2rem;
+		}
 	}
 }
